@@ -70,7 +70,7 @@ class HallucinationArchon(base_agent.BaseAgent):
       return actions.FunctionCall(_HAL_ARCHON, [_NOT_QUEUED])
     elif _SELECT_ARMY in obs.observation["available_actions"]:
       return actions.FunctionCall(_SELECT_ARMY, [_SELECT_ALL])
-      print("score general is %(score_general)" %{
+      print("score general is %(score_general)")
     else:
       return actions.FunctionCall(_NO_OP, [])
     
